@@ -1,0 +1,16 @@
+testRegex1:
+  inputs:
+    - regex: "w.*"
+    - word: "world"
+  description: text regex fine
+  testFlowPath: regex.match_regex
+  result: SUCCESS
+  
+
+testRegex2:
+  inputs:
+    - regex: "w.*"
+    - word: "sun"
+  description: text regex fine
+  testFlowPath: regex.match_regex
+  result: FAILURE
